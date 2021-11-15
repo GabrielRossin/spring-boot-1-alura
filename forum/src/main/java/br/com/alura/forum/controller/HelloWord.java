@@ -5,11 +5,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-@Controller
+@Controller //indica que um controller
 public class HelloWord
 {
-    @RequestMapping("/")
-    @ResponseBody
+    @RequestMapping("/") //mapeia a função
+    @ResponseBody //Indicar ao Spring que o retorno do método deve ser devolvido como resposta
     public String hello()
     {
         return  "Hello World";
